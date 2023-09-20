@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E5158A72ABB7074007BA331 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5158A62ABB7074007BA331 /* Post.swift */; };
 		8E80E07D2ABAC9F8003EC81E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E07C2ABAC9F8003EC81E /* AppDelegate.swift */; };
 		8E80E07F2ABAC9F8003EC81E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E07E2ABAC9F8003EC81E /* SceneDelegate.swift */; };
-		8E80E0812ABAC9F8003EC81E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E0802ABAC9F8003EC81E /* ViewController.swift */; };
 		8E80E0862ABAC9F9003EC81E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E80E0852ABAC9F9003EC81E /* Assets.xcassets */; };
 		8E80E0892ABAC9F9003EC81E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E80E0872ABAC9F9003EC81E /* LaunchScreen.storyboard */; };
 		8E80E0922ABACAA2003EC81E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E0912ABACAA2003EC81E /* TabBarController.swift */; };
-		8E80E0942ABACAC4003EC81E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E0932ABACAC4003EC81E /* ProfileViewController.swift */; };
 		8E80E0962ABACACD003EC81E /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E0952ABACACD003EC81E /* FeedViewController.swift */; };
+		8E80E0982ABACC11003EC81E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E0972ABACC11003EC81E /* ProfileViewController.swift */; };
+		8E80E09A2ABACC4B003EC81E /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80E0992ABACC4B003EC81E /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E5158A62ABB7074007BA331 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8E80E0792ABAC9F8003EC81E /* VkCloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkCloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E80E07C2ABAC9F8003EC81E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E80E07E2ABAC9F8003EC81E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E80E0802ABAC9F8003EC81E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E80E0852ABAC9F9003EC81E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E80E0882ABAC9F9003EC81E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E80E08A2ABAC9F9003EC81E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E80E0912ABACAA2003EC81E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		8E80E0932ABACAC4003EC81E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8E80E0952ABACACD003EC81E /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8E80E0972ABACC11003EC81E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8E80E0992ABACC4B003EC81E /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E5158A42ABB64A3007BA331 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E80E0952ABACACD003EC81E /* FeedViewController.swift */,
+				8E80E0992ABACC4B003EC81E /* PostViewController.swift */,
+				8E80E0972ABACC11003EC81E /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8E5158A52ABB7068007BA331 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8E5158A62ABB7074007BA331 /* Post.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		8E80E0702ABAC9F8003EC81E = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +80,14 @@
 		8E80E07B2ABAC9F8003EC81E /* VkCloneApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E5158A52ABB7068007BA331 /* Data */,
+				8E5158A42ABB64A3007BA331 /* Controllers */,
 				8E80E0902ABACA78003EC81E /* TabBarController */,
 				8E80E07C2ABAC9F8003EC81E /* AppDelegate.swift */,
 				8E80E07E2ABAC9F8003EC81E /* SceneDelegate.swift */,
-				8E80E0802ABAC9F8003EC81E /* ViewController.swift */,
 				8E80E0852ABAC9F9003EC81E /* Assets.xcassets */,
 				8E80E0872ABAC9F9003EC81E /* LaunchScreen.storyboard */,
 				8E80E08A2ABAC9F9003EC81E /* Info.plist */,
-				8E80E0932ABACAC4003EC81E /* ProfileViewController.swift */,
-				8E80E0952ABACACD003EC81E /* FeedViewController.swift */,
 			);
 			path = VkCloneApp;
 			sourceTree = "<group>";
@@ -151,11 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E80E0812ABAC9F8003EC81E /* ViewController.swift in Sources */,
+				8E80E0982ABACC11003EC81E /* ProfileViewController.swift in Sources */,
+				8E80E09A2ABACC4B003EC81E /* PostViewController.swift in Sources */,
 				8E80E0922ABACAA2003EC81E /* TabBarController.swift in Sources */,
-				8E80E0942ABACAC4003EC81E /* ProfileViewController.swift in Sources */,
 				8E80E07D2ABAC9F8003EC81E /* AppDelegate.swift in Sources */,
 				8E80E0962ABACACD003EC81E /* FeedViewController.swift in Sources */,
+				8E5158A72ABB7074007BA331 /* Post.swift in Sources */,
 				8E80E07F2ABAC9F8003EC81E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
